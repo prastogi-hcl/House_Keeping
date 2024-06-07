@@ -8,7 +8,7 @@
         state: directory
 
     - name: Generate files inside tmp
-      shell: /home/ansible/playbooks/file_generator.sh
+      shell: file_generator.sh
 
     - name: Ansible delete file
       find:
