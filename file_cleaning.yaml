@@ -1,5 +1,5 @@
 - name: Generate temparory files
-  hosts: localhost
+  hosts: appservers
   become: true
   tasks:
     - name: Create temporary directory
