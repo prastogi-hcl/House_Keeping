@@ -7,9 +7,9 @@
         paths: /tmp/temp_files
         patterns: "file*"
       register: files_to_delete
-    - name: Confirm to continue
-      pause:
-        prompt: Please confirm you want to delete files! Press return to continue. Press Ctrl+c and then "a" to abort
+   # - name: Confirm to continue
+   #   pause:
+   #     prompt: Please confirm you want to delete files! Press return to continue. Press Ctrl+c and then "a" to abort
     - name: Deleting files inside directory
       file:
         path: "{{ item.path }}"
