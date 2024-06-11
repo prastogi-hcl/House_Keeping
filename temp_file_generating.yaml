@@ -1,0 +1,11 @@
+- name: Generate temparory files
+  hosts: appservers
+  become: true
+  tasks:
+    - name: Create temporary directory
+      file:
+        path: /tmp/temp_files
+        state: directory
+
+    - name: Generate files inside tmp
+      shell: /home/ansible/file_generator.sh
