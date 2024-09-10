@@ -1,5 +1,5 @@
 - name: Generate temparory files
-  hosts: appservers
+  hosts: jboss-servers
   become: true
   tasks:
     - name: Ansible delete file
